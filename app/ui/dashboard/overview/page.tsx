@@ -10,6 +10,12 @@ import CardWrapper from './cards';
 import LatestInvoices from './latest-invoices';
 import RevenueChart from './revenue-chart';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashboard | Acme Dashboard',
+};
+
 export default async function Page() {
   return (
     <main>

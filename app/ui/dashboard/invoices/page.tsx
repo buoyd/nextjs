@@ -5,7 +5,12 @@ import InvoicesTable from '@/app/ui/dashboard/invoices/table';
 import { lusitana } from '@/app/ui/fonts';
 import Search from '@/app/ui/search';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
 import { Suspense } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Invoices | Acme Dashboard',
+};
 
 export default async function Page({
   searchParams,
